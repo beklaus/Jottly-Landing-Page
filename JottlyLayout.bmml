@@ -1,0 +1,45 @@
+<mockup version="1.0" skin="wireframe" fontFace="Balsamiq Sans" measuredW="1295" measuredH="716" mockupW="1150" mockupH="710">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="145" y="6" w="1150" h="710" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Jott.ly%20-%20Jott%20it%20down%2C%20collaborate.</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="324" y="112" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::MenuBar" x="803" y="170" w="-1" h="-1" measuredW="321" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>How%20It%20Works%2C%20Pricing%2C%20Get%20Started%2C%20Log%20In</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Paragraph" x="324" y="267" w="436" h="81" measuredW="275" measuredH="80" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>The%20easiest%20way%20to%20share%20notes.%0AAll%20your%20devices%2C%20all%20their%20devices.%20%0AAlways%20in%20sync.%20Everyone%20on%20the%20same%20page.%0A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Button" x="862" y="424" w="203" h="77" measuredW="95" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Get%20Started%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Image" x="324" y="383" w="175" h="158" measuredW="77" measuredH="79" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>One%20set%20of%20devices%20w%20text</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Image" x="570" y="383" w="175" h="158" measuredW="77" measuredH="79" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>2nd%20set%20of%20devices%20w%20text</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::MenuBar" x="560" y="680" w="321" h="21" measuredW="321" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>How%20It%20Works%2C%20Pricing%2C%20Get%20Started%2C%20Log%20In</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
