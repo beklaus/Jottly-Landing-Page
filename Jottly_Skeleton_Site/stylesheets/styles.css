@@ -1,0 +1,421 @@
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline; }
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block; }
+    body {
+        line-height: 1.2; }
+    ol, ul {
+        list-style: none; }
+    blockquote, q {
+        quotes: none; }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none; }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0; }
+body {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    color: #666666;
+    font: 14px/21px;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+/* #Typography
+================================================== */
+
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+    h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+    h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+    h3 { font-size: 24px; line-height: 34px; margin-bottom: 8px; }
+    h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+    h5 { font-size: 17px; line-height: 24px; }
+    h6 { font-size: 14px; line-height: 21px; }
+
+    p { margin: 0 0 20px 0; }
+    p img { margin: 0; }
+    p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+    em { font-style: italic; }
+    strong { font-weight: bold; color: #333; }
+    small { font-size: 80%; }
+
+/*  Blockquotes  */
+    blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+    blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+    blockquote cite { display: block; font-size: 12px; color: #555; }
+    blockquote cite:before { content: "\2014 \0020"; }
+    blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+    hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+/* Header Area */
+div#topsection {
+    background-color: #2e3d4d;
+    background-image: url('../images/main-image.png');
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    min-height: 500px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    color: #2e3d4d;
+}
+
+p, a, h5, h6 {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: block;
+    margin-top: 20px;
+}
+header div#logo {
+    display: block;
+    margin:0 auto;
+    float: left;
+}
+header div#logo a {
+	background:url(../images/logo2x.png) no-repeat;
+	background-size:contain;
+	display:block;
+    height: 128px;
+    width: 158px;
+    text-indent:-9999px;
+}
+
+header nav {
+    display:block;
+    float:right;
+    list-style-type: none;
+    margin-top: 15px;
+}
+header nav ul li {
+    display: inline;
+    padding: 0px 20px 10px 20px;
+}
+header nav ul li.selected {
+    border-bottom: 4px solid #df5754;
+}
+header nav ul li a {
+    color:#fff;
+    text-decoration: none;
+}
+header nav ul li:hover {
+    color:#ccc;
+    border-bottom: 4px solid #df5754;
+}
+
+header a, a:visited {
+    color:#fff;
+}
+
+/* Headline and Screen image at top */
+div#marketing {
+    text-align: center;
+    margin-top: 30px;
+    clear:both;
+    display:block;
+}
+
+div#marketing h1 {
+    font-weight: 700;
+    color:#fff;
+    font-size: 65px;
+    margin:0 auto;
+    letter-spacing: 0;
+    line-height: .9;
+    max-width: 700px;
+}
+
+div#marketing h2 {
+   font-family: 'Lato', Helvetica, Arial, sans-serif;
+    color:#fff;
+    font-size: 20px;
+}
+
+div#screengrab {
+    text-align: center;
+    clear: both;
+    display: block;
+    background:url(../images/BenKlaus_app_macbook.png) no-repeat center bottom;
+    background-size:contain !important;
+    max-width:651px;
+    height:296px;
+    margin:0 auto;
+}
+
+div#screengrab button{
+    color:#fff;
+    padding: 11px 35px 12px;
+    font-size: 22px;
+    border-radius: 6px;
+    position:absolute;
+    left: 365px; bottom: 40px;
+}
+
+div#screengrab button:hover{
+    background-color: #ca4340;
+}
+
+/* adjust size of Ampersand in Headline */
+.header_ampersand {
+    font-size: 60px;
+}
+
+/* Threee column benefits w round images section */
+div#benefits {
+    margin-top: 20px;
+    text-align: center;
+    padding:60px 10px;
+}
+
+div#benefits h4 {
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+div#benefits p, div#benefits  h4{
+    padding: 0 10px;
+}
+
+div#benefits img {    
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+/* Large Screen image feature section */
+div#feature_one {
+    background-color: #efefef;
+    padding: 30px 0px 0px 0px;
+}
+
+div#feature_one img{
+    margin: 10px 0 -2px 0;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+div#feature_one h4, div#feature_two h4 {
+    line-height: 1.2;
+    margin-top:70px;
+    font-weight: bold;
+}
+
+/* User testimonies w user images section */
+div#feature_two {
+    padding: 60px 0;
+}
+
+div#feature_two a,div#feature_two a:visited{
+    color: #df5754;
+}
+
+div#feature_two a:hover{
+    color: #ca4340;
+}
+
+div#feature_two img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+/* Call to action with Email section */
+div#email {
+    background-color: #2e3d4d;
+    text-align: center;
+    padding:60px 0 20px;
+}
+
+div#email h3, div#email h5{
+    color: #fff;
+}
+
+div#email form {
+    margin: 15px 0;
+}
+
+div#email form input {
+    display: inline;
+    width: 350px;
+    border-radius: 3px;
+    border:none;
+    padding: 12px;
+}
+
+div#email form button {
+    display: inline;
+    background-color: #df5754;
+    color: #fff;
+    border-radius: 3px;
+    text-shadow: none;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    border:none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    padding:8px 15px 11px;
+ }
+
+div#email form button:hover{
+    background-color: #ca4340;
+}
+
+/* Footer Section */
+div#footer{
+    background-color: #efefef;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+div#footer nav ul li {
+    display:inline;
+}
+
+div#footer nav ul li a{
+   color: #666666;    
+    text-decoration: none;
+}
+
+div#footer nav ul li a:hover{
+    color: #df5754;
+}
+
+.right{
+    text-align: right;
+}
+
+/* #Media Queries
+================================================== */
+
+    /* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (max-width: 959px) {
+        
+    }
+
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        div#screengrab button{
+        left: 260px; bottom: 35px;
+        }
+        div#feature_one img{
+            margin: 92px 0 -2px 0;
+        }
+    }
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+    header div {
+        display:block;
+        text-align: center;
+        padding-top:20px;
+    }
+    header div#logo{
+        float:none;
+    }
+    header div#logo a {
+        background:url(../images/logo3x.png) no-repeat;
+        background-size:contain;
+        margin:0 auto;
+    }     
+    header nav {
+        display:block;
+        float:none;
+    }
+    header nav ul {
+        float:none;
+        text-align: center;
+    }
+    header nav ul li {
+        display: block;
+        padding: 5px 0;
+    }
+    header nav ul li.selected {
+        border-bottom: none;
+        background-color: #df5754;
+    }
+    header nav ul li:hover {
+        border-bottom: none;
+        background-color: #df5754;
+    }   
+    .header_ampersand {
+        font-size: 38px;
+    }
+
+    div#screengrab button{
+        left: 55px; bottom: 4px;
+        padding: 7px 35px 6px;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+
+    div#screengrab {
+    height: 175px;
+    }
+
+    div#marketing {
+        margin-top: 20px;
+    }
+    div#marketing h1 {
+        font-size:45px;
+        margin-bottom: 5px;
+    }
+    div#marketing h2 {
+        line-height: 1.2;
+    }
+    div#feature_one , div#feature_two {
+        text-align: center;
+    }
+
+    div#feature_one {
+        background-color: #efefef;
+        padding: 0px 0px;
+    }
+
+    div#email form input {
+        width:80%;
+        margin-bottom: 10px;
+    }
+    div#footer nav {
+        text-align: center;
+    }
+    div#footer div.right {
+        text-align: center;
+    }        
+    }
+
+    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+       div#screengrab img{
+           margin-bottom: -2px;
+        }
+        div#screengrab button{
+          left: 97px; bottom: 20px;
+        }
+        div#screengrab {
+        height: 210px;
+        }
+        header nav {
+            display:block;
+            float:none;
+        }
+    }
+        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+    @media only screen and (max-width: 479px) {
+
+}
+
+
